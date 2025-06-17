@@ -1,0 +1,19 @@
+#contenedor
+{
+    width: 100%;
+    height: 100%;
+    background-color: #c19ffa;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+h2{color: #578d6b}
+div{
+    width: 110px;
+    height: 110px;
+    background-color: antiquewhite;
+    border: 10px solid #c19ffa;
+    border-radius: 20% 20% 20% 20%;
+
+}
