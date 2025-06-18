@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="contenedor">
+    <h2>Formulario Completo</h2>
+    
+        <form id="mainForm">
+            <label for="nombre">Nombre Completo:</label><br>
+            <input type="text" id="nombre" name="nombre" required>
+            <br>
+            <span id="errorNombre" style="color: red;"></span>
+            <br>
+            <label for="edad">edad:</label><br>
+            <input type="number" id="edad" name="edad" placeholder="Ingresa tu edad" required>
+            <br>
+            <span id="errorEdad" style="color: red;"></span>
+            <br>
+            <label for="codigoPostal">Codigo postal:</label><br>
+            <input type="number" id="codigoPostal" nombre="codigoPostal" placeholder="Ingresatu codigo postal: xxxxx" required>
+            <br>
+            <span id="errorCodigoPostal" style="color: red;"></span>
+            <br>
+            <label>Genero:</label><br>
+            <label for="masc"></label>
+            <input type="radio" id="masc" name="Genero" value="Masculino">
+            <label>Masculino</label>
+            <label for="fem"></label>
+            <input type="radio" id="fem" name="Genero" value="Femenino">
+            <label>Femenino</label>
+            <label for="otro"></label>
+            <input type="radio" id="otro" name="Genero" value="Otro">
+            <label>Otro</label>
+            <br>
+            <label>Intereses(selecciona todos los que apliquen):</label><br>
+            <label for="tec"></label>
+            <input type="checkbox" id="tec" name="Intereses" value="Tecnologia">
+            <label>Tecnologia</label>
+            <label for="dep"></label>
+            <input type="checkbox" id="dep" name="Intereses" value="Deportes">
+            <label>Deportes</label>
+            <label for="music"></label>
+            <input type="checkbox" id="music" name="Intereses" value="Musica">
+            <label>Musica</label>
+            <label for="art"></label>
+            <input type="checkbox" id="art" name="Intereses" value="Arte">
+            <label>Arte</label>
+            <br>
+            <label for="pais">Pais:</label><br>
+            <select id="pais" name="pais" aria-placeholder="selecciona tu pais">
+                <option value=" ">Selecciona tu pais</option>
+                <option value="Mexico">Mexico</option>
+                <option value="España">España</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Peru">Peru</option>
+                <option value="Chile">Chile</option>
+                <option value="Venezuela">Venezuela</option>
+                <option value="Otros">Otros</option>
+            </select>
+            <br>
+            <label for="comentarios">Comentarios adicionales:</label><br>
+            <textarea id="comentarios" name="comentarios" placeholder="Escrime tus comentarios aqui..."></textarea>>
+            <br>
+            <label for="img">Subir imagen:</label><br>
+            <input type="file" id="img" name="img" accept="image/*">
+            <br>
+            <button type="submit" class="submit-btn">Enviar formulario</button>
+            
+        </form>
+    </div>
+
+    <script src="form.js"></script>
+
+</body>
+</html>
