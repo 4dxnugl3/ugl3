@@ -27,14 +27,16 @@
             <br>
             <label>Genero:</label><br>
             <label for="masc"></label>
-            <input type="radio" id="masc" name="Genero" value="Masculino">
+            <input type="radio" id="masc" name="genero" value="Masculino">
             <label>Masculino</label>
             <label for="fem"></label>
-            <input type="radio" id="fem" name="Genero" value="Femenino">
+            <input type="radio" id="fem" name="genero" value="Femenino">
             <label>Femenino</label>
             <label for="otro"></label>
-            <input type="radio" id="otro" name="Genero" value="Otro">
+            <input type="radio" id="otro" name="genero" value="Otro">
             <label>Otro</label>
+            <br>
+            <span id="errorGenero" style="color: red;"></span>
             <br>
             <label>Intereses(selecciona todos los que apliquen):</label><br>
             <label for="tec"></label>
@@ -50,8 +52,10 @@
             <input type="checkbox" id="art" name="Intereses" value="Arte">
             <label>Arte</label>
             <br>
+            <span id="errorInteres" style="color: red;"></span>
+            <br>
             <label for="pais">Pais:</label><br>
-            <select id="pais" name="pais" aria-placeholder="selecciona tu pais">
+            <select id="pais" name="pais">
                 <option value=" ">Selecciona tu pais</option>
                 <option value="Mexico">Mexico</option>
                 <option value="España">España</option>
@@ -62,6 +66,8 @@
                 <option value="Venezuela">Venezuela</option>
                 <option value="Otros">Otros</option>
             </select>
+            <br>
+            <span id="errorPais" style="color: red;"></span>
             <br>
             <label for="comentarios">Comentarios adicionales:</label><br>
             <textarea id="comentarios" name="comentarios" placeholder="Escrime tus comentarios aqui..."></textarea>>
